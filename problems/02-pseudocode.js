@@ -13,7 +13,8 @@ Given a number, write a function called within5Of100 to return true if the given
 number is within 5 of 100.
 */
 function within5Of100(n){
-    return n % 5 === 0
+    //return n % 5 === 0
+    return n >= 95 && n <= 105
 }
 
 console.log(within5Of100(94));  //=> false
