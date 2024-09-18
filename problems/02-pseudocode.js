@@ -12,12 +12,15 @@ Problem Statement:
 Given a number, write a function called within5Of100 to return true if the given
 number is within 5 of 100.
 */
+function within5Of100(n){
+    return n % 5 === 0
+}
 
-// console.log(within5Of100(94));  //=> false
-// console.log(within5Of100(95));  //=> true
-// console.log(within5Of100(100)); //=> true
-// console.log(within5Of100(105)); //=> true
-// console.log(within5Of100(106)); //=> false
+console.log(within5Of100(94));  //=> false
+console.log(within5Of100(95));  //=> true
+console.log(within5Of100(100)); //=> true
+console.log(within5Of100(105)); //=> true
+console.log(within5Of100(106)); //=> false
 
 // CHALLENGE: Can you design a function that would return true if a given number
 // is within X of another given number Y?

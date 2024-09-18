@@ -22,8 +22,18 @@ line inside the function block.
 */
 
 
-// console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
-// console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
+// function funnyStringConcat(str1, str2){
+//     let first3 = (str1[0] + str1[1] + str1[2])
+//     let last3 = (str2[str2.length-3] + str2[str2.length-2] + str2[str2.length-1])
+//     return (first3 + last3)
+// }
+
+function funnyStringConcat(str1, str2){
+    return (str1.substring(0, 3) + str2.substring(str2.length-3, str2.length))
+}
+
+console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
+console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = funnyStringConcat;
